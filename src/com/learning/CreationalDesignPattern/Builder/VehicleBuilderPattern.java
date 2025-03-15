@@ -2,6 +2,7 @@ package com.learning.CreationalDesignPattern.Builder;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 @Getter
 @AllArgsConstructor
