@@ -1,11 +1,13 @@
 package problems;
 
+import java.util.Arrays;
+
 public class DistributeCoin {
 
     static int res = 0;
     public static void main(String[] args) {
         Integer[] ar= {3,0,0};
-        TreeNode root = TreeNode.createTree(ar);
+        TreeNode root = TreeNode.createTree(Arrays.asList(ar));
         distributeCoins(root);
         System.out.println(res);
     }

@@ -1,10 +1,12 @@
 package problems;
 
+import java.util.Arrays;
+
 public class DeleteNode {
 
     public static void main(String[] args) {
         Integer[] ar = {1,1,1};
-        TreeNode root = TreeNode.createTree(ar);
+        TreeNode root = TreeNode.createTree(Arrays.asList(ar));
         int target = 1;
         deleteNode(root, target);
         if(root.val == target && root.left == null && root.right == null)

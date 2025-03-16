@@ -1,9 +1,11 @@
 package problems;
 
+import java.util.Arrays;
+
 public class CountCompleteTreeNodes {
     public static void main(String[] args) {
         Integer[] ar = {1,2,3,4,5,6};
-        TreeNode root = TreeNode.createTree(ar);
+        TreeNode root = TreeNode.createTree(Arrays.asList(ar));
         long start = System.nanoTime();
         int result = countNodes(root);
         long end = System.nanoTime();

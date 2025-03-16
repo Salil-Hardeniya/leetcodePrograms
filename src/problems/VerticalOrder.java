@@ -18,7 +18,7 @@ public class VerticalOrder {
         for (Integer a: List.of(1,2,3,4,6,5,7)) {
             ar[i++] = a;
         }
-        System.out.println(verticalTraversal(TreeNode.createTree(ar)));
+        System.out.println(verticalTraversal(TreeNode.createTree(Arrays.asList(ar))));
     }
     static Map<Integer, List<Node>> map = new HashMap<>();
     static int min = 0; static int max = 0;

@@ -1,14 +1,11 @@
 package problems;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class DeleteNodeReturnForest1110 {
     public static void main(String[] args) {
         Integer[] arr = {1,2,3,4,5,6,7};
-        TreeNode root = TreeNode.createTree(arr);
+        TreeNode root = TreeNode.createTree(Arrays.asList(arr));
         int[] to_delete = {3,5};
         DeleteNodeReturnForest1110 deleteNodeReturnForest1110 = new DeleteNodeReturnForest1110();
         List<TreeNode> res = deleteNodeReturnForest1110.delNodes(root, to_delete);
