@@ -5,13 +5,15 @@ import java.util.*;
 public class Test {
     public static void main(String[] args) {
 
-        Map<Tree, Integer> ar = new HashMap<>();
-        ar.put(new Tree(1, "salil"), 1);
-        ar.put(new Tree(1, "salil"), 2);
+//        Map<Tree, Integer> ar = new HashMap<>();
+//        ar.put(new Tree(1, "salil"), 1);
+//        ar.put(new Tree(1, "salil"), 2);
+//
+//        System.out.println(ar.size());
+//        System.out.println(ar);
 
-        System.out.println(ar.size());
-        System.out.println(ar);
-
+        int a = 7;
+        String s = Integer.toBinaryString(a);
     }
 
     public static class Tree {
