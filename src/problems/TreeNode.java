@@ -1,7 +1,10 @@
 package problems;
 
 import lombok.Data;
+
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 @Data
 public class TreeNode {
@@ -18,17 +21,28 @@ public class TreeNode {
     }
 
     public static TreeNode createTree(List<Integer> list) {
-        return createTreeHelper(list, 0);
-    }
+        if (list == null || list.isEmpty() || list.get(0) == null) return null;
 
-    private static TreeNode createTreeHelper(List<Integer> list, int index) {
-        if (index >= list.size() || list.get(index) == null) {
-            return null;
+        TreeNode root = new TreeNode(list.get(0));
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+
+        int i = 1;
+        while (i < list.size()) {
+            TreeNode current = queue.poll();
+
+            if (i < list.size() && list.get(i) != null) {
+                current.left = new TreeNode(list.get(i));
+                queue.add(current.left);
+            }
+            i++;
+
+            if (i < list.size() && list.get(i) != null) {
+                current.right = new TreeNode(list.get(i));
+                queue.add(current.right);
+            }
+            i++;
         }
-
-        TreeNode root = new TreeNode(list.get(index));
-        root.left = createTreeHelper(list, 2 * index + 1); // Calculate left child index
-        root.right = createTreeHelper(list, 2 * index + 2); // Calculate right child index
 
         return root;
     }
