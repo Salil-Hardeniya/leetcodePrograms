@@ -1,0 +1,64 @@
+# ==========================
+# Compiled class files
+# ==========================
+*.class
+
+# ==========================
+# Build outputs
+# ==========================
+# Maven / Gradle
+target/
+build/
+
+# IntelliJ
+out/
+
+# Optional: ignore generated agent jar if you don't want it versioned
+# agent.jar
+# If you want to version your Java agent JAR, keep it in a separate folder like dist/ and do not ignore
+
+# ==========================
+# Java package files
+# ==========================
+*.jar
+*.war
+*.ear
+
+# ==========================
+# Java manifest
+# ==========================
+# Ignore generated manifests, but keep your custom one in source
+target/META-INF/MANIFEST.MF
+out/META-INF/MANIFEST.MF
+# Keep MANIFEST.MF in src/main/resources/META-INF/
+
+# ==========================
+# IntelliJ IDEA files
+# ==========================
+.idea/
+*.iml
+/shelf/
+workspace.xml
+/httpRequests/
+/dataSources/
+dataSources.local.xml
+
+# ==========================
+# Qodana
+# ==========================
+.qodana/
+qodana.yaml
+
+# ==========================
+# Logs and temp files
+# ==========================
+*.log
+*.tmp
+*.bak
+*.swp
+
+# ==========================
+# OS-specific files
+# ==========================
+.DS_Store
+Thumbs.db
