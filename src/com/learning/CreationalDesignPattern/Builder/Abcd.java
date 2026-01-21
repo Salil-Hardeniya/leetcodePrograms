@@ -1,7 +1,5 @@
 package com.learning.CreationalDesignPattern.Builder;
 
-import com.learning.CreationalDesignPattern.Builder.Sample;
-import com.learning.CreationalDesignPattern.Builder.VehicleBuilderPattern;
 
 public class Abcd {
 
